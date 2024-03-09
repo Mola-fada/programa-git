@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tu Título Aquí</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 100%; /* Cambiado de max-width a width */
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        .employee-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .employee-list li {
+                margin-bottom: 10px;
+            }
+
+        .employee-name {
+            font-weight: bold;
+        }
+
+        .employee-role {
+            color: #666;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+            button:hover {
+                background-color: #45a049;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Empleados</h1>
+        <ul class="employee-list">
+            <li>
+                <span class="employee-name">Juan Pérez</span> - <span class="employee-role">Gerente</span>
+            </li>
+            <li>
+                <span class="employee-name">María García</span> - <span class="employee-role">Asistente de Ventas</span>
+            </li>
+            <li>
+                <span class="employee-name">Carlos López</span> - <span class="employee-role">Recepcionista</span>
+            </li>
+            <!-- Puedes agregar más empleados según sea necesario -->
+        </ul>
+        <!-- Botón para volver atrás -->
+        <button onclick="goBack()">Volver</button>
+    </div>
+
+    <script>
+        // Función para volver atrás en el historial del navegador
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
